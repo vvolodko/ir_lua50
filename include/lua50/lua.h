@@ -10,9 +10,12 @@
 #ifndef lua_h
 #define lua_h
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdarg.h>
 #include <stddef.h>
-
 
 #define LUA_VERSION	"Lua 5.0"
 #define LUA_COPYRIGHT	"Copyright (C) 1994-2003 Tecgraf, PUC-Rio"
@@ -387,5 +390,8 @@ struct lua_Debug {
 * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ******************************************************************************/
 
+#ifdef __cplusplus
+} // extern "C"
+#endif
 
 #endif
